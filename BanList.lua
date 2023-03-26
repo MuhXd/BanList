@@ -10,6 +10,7 @@ if v[1] == game:GetService("RbxAnalyticsService"):GetClientId() then
 return {true,v[2]}
 end
 end
+  return {false}
 end
 
 BanListFuncs.ReProfileIDban = function()
@@ -18,6 +19,7 @@ if v[1] == game.Players.LocalPlayer.UserID then
 return {true,v[2]}
 end
 end
+  return {false}
 end
 
 return BanListFuncs
